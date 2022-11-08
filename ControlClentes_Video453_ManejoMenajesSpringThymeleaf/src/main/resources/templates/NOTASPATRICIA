@@ -1,0 +1,8 @@
+  <--! plantilla.html es una Plantilla para que pueda usarla desde todas las vistas que desee --!
+
+  <--!    En el h1 en lugar de escribir el texto aquí, lo tomo del archivo de messages.properties:
+             cojo plantilla.titulo. th:text sustituye Titulo --!
+
+
+ <--! En p para no perder el enlace que deseo tener en mi footer, no pongo th:text sino [[]] porque esto
+            no sustituye lo que pongo en el parrafo sino que lo añade --!
