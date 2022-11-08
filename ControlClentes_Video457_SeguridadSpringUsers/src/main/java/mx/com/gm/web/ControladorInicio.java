@@ -24,7 +24,8 @@ public class ControladorInicio {
     public String inicio(Model model, @AuthenticationPrincipal User user){
         var personas = personaService.listarPersonas();
         log.info("ejecutando el controlador Spring MVC");
-        log.info("usuario que hizo login:" + user);
+        log.info("usuario que hizo login:" + user); //manda a consola la info del usuario que ha hecho el loggin,
+        // aunque el password saldrá como protegido
         model.addAttribute("personas", personas);
         return "index";
     }
