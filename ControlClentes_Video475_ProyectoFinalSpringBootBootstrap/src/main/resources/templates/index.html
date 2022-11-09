@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<!-- Aquí pongo el head para que aparezcan aquí también las librerías que necesito de bootstrap etc -->
+    <head th:replace="layout/plantilla :: head">
+        <title>Inicio</title>
+    </head>
+    <body>
+    <!-- Aquí pongo el replace correpondiente en cada uno para que aparezcan en estas vistas lo que me interesa de la plantilla -->
+
+        <header th:replace="layout/plantilla :: header"></header>
+        <section th:replace="layout/botonesAgregar :: botonesAgregar"></section>
+        <section th:replace="layout/agregarCliente :: agregarCliente"></section>
+        <section th:replace="layout/listadoClientes :: listadoClientes"></section>
+        <footer th:replace="layout/plantilla :: footer"></footer>
+    </body>
+</html>
